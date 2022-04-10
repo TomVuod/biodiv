@@ -21,5 +21,6 @@ lubridate_1.8.0
 EXTRAS:
 To increase the app performance I used profvis to see which functions are the most resource consuming. Based on the results, I decided to shift some operations outside the server function. They are now executed once on the app startup. Moreover, search matching is performed on the server by setting the server argument of updateSelectizeInput to TRUE. Data is loaded more efficiently by using vroom::vroom function instead of read.csv. The initialization time can be reduced by fetching data directly from .csv file with vroom::vroom function. This method has not been implemented due to the file size limit on the Github. 
 
-Additional feature: slider input enabling dynamic control of the point size on the map with proportions among points preserved. This helps spot the points which are too small to be detected immediately. The additional checkbox "augmentation" when unchecked allows for point size reduction which is useful in the case of large overlapping points. 
+Deploy on Google Cloud available at http://34.118.43.1/
 
+Additional feature: slider input enabling dynamic control of the point size on the map with proportions among points preserved. This helps spot the points which are too small to be detected immediately. The additional checkbox "augmentation" when unchecked allows for point size reduction which is useful in the case of large overlapping points. 
